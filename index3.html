@@ -19,11 +19,23 @@
     //   cart.push(100); //100ポイント追加
 
     //   console.log(cart);
-    const userID = ['user34', '', 'user18', '', 'user55', 'user38'];
 
-      const result = userID.filter(element => {
+    // 特定の要素を取得。elementが''ではない要素を配列から取得
+    // const userID = ['user34', '', 'user18', '', 'user55', 'user38'];
 
-        return element !== '';
+    //   const result = userID.filter(element => {
+
+    //     return element !== '';
+
+    //   })
+
+    //   console.log(result);
+    //  mapで配列内の要素を新しい変数に呼び出す
+    const myNumber = ['田中太郎', '佐藤一郎', '山田次郎'];
+
+      const result = myNumber.map(element => {
+
+        return element + 'さん';
 
       })
 
